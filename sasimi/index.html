@@ -3,36 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>石垣島の鮮魚店・天ぷら 持ち帰り31軒マップ｜石垣島ローカル情報</title>
+<title>石垣島のラーメン屋さん23軒マップ｜石垣島ローカル情報</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Yomogi&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <meta name="author" content="石垣島ローカル情報">
-<meta name="description" content="石垣島で刺身や天ぷらを持ち帰りできる地元の鮮魚店31軒を、地図と営業時間つきで紹介。テイクアウトグルメ巡りに便利なローカル情報サイトです。">
+<meta name="description" content="石垣島のラーメン・麺グルメ23軒を、地図と営業時間つきで紹介。朝6時の朝ラーから深夜4時の〆まで、島のラーメン巡りに便利なローカル情報サイトです。">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://bannaohama.github.io/sasimi/">
+<link rel="canonical" href="https://bannaohama.github.io/ramen/">
 <!-- Open Graph (SNSシェア用) -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="石垣島ローカル情報">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="石垣島の鮮魚店・天ぷら 持ち帰り31軒マップ">
-<meta property="og:description" content="石垣島で刺身や天ぷらを持ち帰りできる地元の鮮魚店31軒を、地図と営業時間つきで紹介。テイクアウトグルメ巡りに便利なローカル情報サイトです。">
-<meta property="og:url" content="https://bannaohama.github.io/sasimi/">
-<meta property="og:image" content="https://bannaohama.github.io/sasimi/ogp.png">
+<meta property="og:title" content="石垣島のラーメン屋さん23軒マップ">
+<meta property="og:description" content="石垣島のラーメン・麺グルメ23軒を、地図と営業時間つきで紹介。朝6時の朝ラーから深夜4時の〆まで、島のラーメン巡りに便利なローカル情報サイトです。">
+<meta property="og:url" content="https://bannaohama.github.io/ramen/">
+<meta property="og:image" content="https://bannaohama.github.io/ramen/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="石垣島の鮮魚店・天ぷら 持ち帰り31軒マップ">
+<meta property="og:image:alt" content="石垣島のラーメン屋さん23軒マップ">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="石垣島の鮮魚店・天ぷら 持ち帰り31軒マップ">
-<meta name="twitter:description" content="石垣島で刺身や天ぷらを持ち帰りできる地元の鮮魚店31軒を、地図と営業時間つきで紹介。テイクアウトグルメ巡りに便利なローカル情報サイトです。">
-<meta name="twitter:image" content="https://bannaohama.github.io/sasimi/ogp.png">
+<meta name="twitter:title" content="石垣島のラーメン屋さん23軒マップ">
+<meta name="twitter:description" content="石垣島のラーメン・麺グルメ23軒を、地図と営業時間つきで紹介。朝6時の朝ラーから深夜4時の〆まで、島のラーメン巡りに便利なローカル情報サイトです。">
+<meta name="twitter:image" content="https://bannaohama.github.io/ramen/ogp.png">
 <style>
   :root{
-    --blue:#1683C0; --blue-deep:#0C5E92; --green:#1FA980; --green-deep:#138A66;
-    --sky:#EAF4FB; --mint:#E8F6F0; --bg:#FFFFFF; --soft:#F4FAFA;
-    --ink:#16383F; --muted:#5E767B; --line:#E3EDED;
+    --blue:#C7402D; --blue-deep:#96291A; --green:#DE8F2B; --green-deep:#B06F12;
+    --sky:#FBEFE8; --mint:#FCF4E4; --bg:#FFFFFF; --soft:#FBF6F0;
+    --ink:#3B241C; --muted:#8A7266; --line:#F0E2D6;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -50,15 +50,15 @@
   @media(max-width:640px){nav .links{display:none}}
 
   /* hero */
-  header.hero{position:relative;background:radial-gradient(120% 90% at 80% -10%, rgba(31,169,128,.16), transparent 60%),linear-gradient(165deg,#EAF6F1 0%, #E7F1FB 78%);color:var(--ink);padding:74px 0 130px;overflow:hidden}
+  header.hero{position:relative;background:radial-gradient(120% 90% at 80% -10%, rgba(222,143,43,.18), transparent 60%),linear-gradient(165deg,#FCF3E6 0%, #FBEDE6 78%);color:var(--ink);padding:74px 0 130px;overflow:hidden}
   .hero .eyebrow{font-family:"Yomogi",cursive;color:var(--green-deep);font-size:1.05rem;letter-spacing:.08em;margin-bottom:18px}
   .hero h1{font-family:"Yuji Syuku",serif;font-weight:400;font-size:clamp(1.8rem,6.5vw,4.6rem);line-height:1.3;letter-spacing:.01em;color:var(--blue-deep)}
   .hero h1 em{font-style:normal;color:var(--green)}
   @media(max-width:520px){.hero h1{font-size:1.6rem;line-height:1.4}}
   @media(max-width:360px){.hero h1{font-size:1.4rem;line-height:1.4}}
-  .hero .lead{margin-top:26px;max-width:46ch;font-size:1.06rem;color:#3A5359;opacity:.98}
+  .hero .lead{margin-top:26px;max-width:46ch;font-size:1.06rem;color:#5C4438;opacity:.98}
   .hero .handwrite{font-family:"Yomogi",cursive;margin-top:30px;font-size:clamp(1.2rem,3.4vw,1.7rem);color:var(--blue-deep);display:inline-block;border-bottom:3px dashed var(--green);padding-bottom:6px;transform:rotate(-1.5deg)}
-  .nobori{position:absolute;top:0;width:62px;background:#fff;color:var(--blue);writing-mode:vertical-rl;text-orientation:upright;font-family:"Yuji Syuku",serif;font-size:1.5rem;letter-spacing:.18em;text-align:center;padding:18px 0 26px;box-shadow:0 8px 22px rgba(12,94,146,.18);border-radius:0 0 4px 4px;transform-origin:top center;animation:flutter 5s ease-in-out infinite}
+  .nobori{position:absolute;top:0;width:62px;background:#fff;color:var(--blue);writing-mode:vertical-rl;text-orientation:upright;font-family:"Yuji Syuku",serif;font-size:1.5rem;letter-spacing:.18em;text-align:center;padding:18px 0 26px;box-shadow:0 8px 22px rgba(150,41,26,.18);border-radius:0 0 4px 4px;transform-origin:top center;animation:flutter 5s ease-in-out infinite}
   .nobori::after{content:"";position:absolute;bottom:-13px;left:0;border-left:31px solid transparent;border-right:31px solid transparent;border-top:14px solid #fff}
   .nobori.one{right:13%;font-size:1.6rem;animation-delay:0s}
   .nobori.two{right:5%;top:40px;color:var(--green);font-size:1.25rem;width:52px;animation-delay:-2.2s}
@@ -71,9 +71,9 @@
   .intro{padding:64px 0 18px}
   .intro .kicker{font-family:"Yomogi",cursive;color:var(--green-deep);font-size:1rem;letter-spacing:.1em}
   .intro h2{font-family:"Yuji Syuku",serif;font-weight:400;font-size:clamp(1.7rem,4.2vw,2.5rem);margin:10px 0 18px;line-height:1.4;color:var(--ink)}
-  .intro p{max-width:62ch;color:#3A5359;font-size:1.02rem}
+  .intro p{max-width:62ch;color:#5C4438;font-size:1.02rem}
   .facts{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-  .fact{flex:1 1 160px;background:var(--soft);border-radius:14px;padding:18px 20px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(22,131,192,.06)}
+  .fact{flex:1 1 160px;background:var(--soft);border-radius:14px;padding:18px 20px;border:1px solid var(--line);box-shadow:0 6px 18px rgba(199,64,45,.06)}
   .fact .n{font-family:"Yuji Syuku",serif;font-size:2rem;color:var(--green-deep);line-height:1}
   .fact .l{font-size:.86rem;color:var(--muted);margin-top:6px}
 
@@ -81,45 +81,45 @@
   .shophead{margin:56px 0 22px}
   .shophead .kicker{font-family:"Yomogi",cursive;color:var(--green-deep);font-size:1rem;letter-spacing:.1em}
   .shophead h2{font-family:"Yuji Syuku",serif;font-weight:400;font-size:clamp(1.6rem,4vw,2.3rem);margin-top:6px;color:var(--ink)}
-  .ordernote{background:var(--soft);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:10px;padding:12px 16px;margin:0 0 6px;font-size:.9rem;color:#3C4F54}
+  .ordernote{background:var(--soft);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:10px;padding:12px 16px;margin:0 0 6px;font-size:.9rem;color:#5C4438}
   .ordernote b{color:var(--blue-deep)}
 
   /* map */
-  .gmap-wrap{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(22,131,192,.10)}
+  .gmap-wrap{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(199,64,45,.10)}
   .gmap-wrap iframe{width:100%;height:440px;border:0;display:block}
   .maphint{font-size:.86rem;color:var(--muted);margin:12px 2px 0}
-  .map-allbtn{display:inline-flex;align-items:center;gap:8px;margin:16px 0 0;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;box-shadow:0 6px 18px rgba(22,131,192,.25)}
+  .map-allbtn{display:inline-flex;align-items:center;gap:8px;margin:16px 0 0;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;box-shadow:0 6px 18px rgba(199,64,45,.25)}
   .map-allbtn:hover{background:var(--green-deep)}
 
   /* leaflet map */
   .gmap-wrap #map{width:100%;height:460px;background:var(--soft)}
   @media(max-width:520px){.gmap-wrap #map{height:380px}}
   .leaflet-container{font-family:"Zen Maru Gothic",sans-serif}
-  .pin{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:linear-gradient(150deg,var(--blue),var(--green));box-shadow:0 3px 8px rgba(12,94,146,.35);border:2px solid #fff}
+  .pin{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:linear-gradient(150deg,var(--blue),var(--green));box-shadow:0 3px 8px rgba(150,41,26,.35);border:2px solid #fff}
   .pin b{transform:rotate(45deg);color:#fff;font-family:"Yuji Syuku",serif;font-size:.92rem;line-height:1}
-  .leaflet-popup-content-wrapper{border-radius:14px;box-shadow:0 10px 30px rgba(22,131,192,.18)}
+  .leaflet-popup-content-wrapper{border-radius:14px;box-shadow:0 10px 30px rgba(199,64,45,.18)}
   .leaflet-popup-content{margin:14px 16px;line-height:1.6}
   .pop .pc{font-family:"Yomogi",cursive;font-size:.74rem;color:var(--green-deep);letter-spacing:.04em}
   .pop h4{font-family:"Yuji Syuku",serif;font-weight:400;font-size:1.15rem;color:var(--blue-deep);margin:2px 0 6px}
-  .pop .pf{display:inline-block;background:#E8F6EF;color:var(--green-deep);border:1.3px dashed var(--green);border-radius:7px;padding:2px 9px;font-size:.78rem;font-family:"Yomogi",cursive;margin-bottom:6px}
+  .pop .pf{display:inline-block;background:#FCF1E0;color:var(--green-deep);border:1.3px dashed var(--green);border-radius:7px;padding:2px 9px;font-size:.78rem;font-family:"Yomogi",cursive;margin-bottom:6px}
   .pop .ph{font-size:.82rem;color:var(--muted);margin-bottom:8px}
   .pop a.gm{display:inline-flex;align-items:center;gap:5px;color:var(--blue);font-weight:700;text-decoration:none;font-size:.86rem}
   .pop a.gm:hover{color:var(--green-deep)}
 
   /* cards */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;padding-bottom:8px;margin-top:30px}
-  .card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(22,131,192,.07);display:flex;flex-direction:column;transition:transform .22s ease, box-shadow .22s ease}
-  .card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(22,131,192,.16)}
+  .card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(199,64,45,.07);display:flex;flex-direction:column;transition:transform .22s ease, box-shadow .22s ease}
+  .card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(199,64,45,.16)}
   .card .top{position:relative;background:linear-gradient(150deg,var(--blue),var(--green));color:#fff;padding:22px 22px 20px}
   .card .num{position:absolute;top:-1px;left:18px;background:#fff;color:var(--blue-deep);font-family:"Yuji Syuku",serif;width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:0 0 10px 10px;font-size:1.05rem;box-shadow:0 3px 8px rgba(0,0,0,.12)}
-  .card .cat{font-family:"Yomogi",cursive;font-size:.82rem;letter-spacing:.06em;color:#EAFBF5;margin:14px 0 6px}
+  .card .cat{font-family:"Yomogi",cursive;font-size:.82rem;letter-spacing:.06em;color:#FDF0E2;margin:14px 0 6px}
   .card h3{font-family:"Yuji Syuku",serif;font-weight:400;font-size:1.45rem;line-height:1.3;margin-top:6px;padding-right:66px}
   .card .rating{position:absolute;top:16px;right:18px;text-align:center;background:rgba(255,255,255,.2);border-radius:12px;padding:6px 10px}
   .card .rating b{font-family:"Yuji Syuku",serif;font-size:1.2rem;display:block;line-height:1}
   .card .rating small{font-size:.66rem;opacity:.9}
   .card .body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
-  .card .desc{color:#3C4F54;font-size:.95rem;flex:1}
-  .card .tag{align-self:flex-start;font-family:"Yomogi",cursive;background:#E8F6EF;color:var(--green-deep);border:1.5px dashed var(--green);border-radius:8px;padding:4px 12px;font-size:.85rem;margin:16px 0 2px;transform:rotate(-1deg)}
+  .card .desc{color:#5C4438;font-size:.95rem;flex:1}
+  .card .tag{align-self:flex-start;font-family:"Yomogi",cursive;background:#FCF1E0;color:var(--green-deep);border:1.5px dashed var(--green);border-radius:8px;padding:4px 12px;font-size:.85rem;margin:16px 0 2px;transform:rotate(-1deg)}
   .card .meta{margin-top:16px;border-top:1px dotted var(--line);padding-top:14px;font-size:.86rem;color:var(--muted)}
   .card .meta div{display:flex;gap:8px;margin-bottom:5px;align-items:flex-start}
   .card .meta .ic{color:var(--blue);flex-shrink:0}
@@ -129,15 +129,15 @@
   /* tip */
   .tip{background:var(--soft);border:1px solid var(--line);border-left:5px solid var(--green);border-radius:12px;padding:20px 22px;margin:30px 0 10px}
   .tip b{font-family:"Yomogi",cursive;color:var(--blue-deep);font-size:1.05rem}
-  .tip p{color:#3C4F54;font-size:.94rem;margin-top:6px}
+  .tip p{color:#5C4438;font-size:.94rem;margin-top:6px}
 
   /* footer */
-  footer{background:linear-gradient(135deg,var(--blue-deep),var(--green-deep));color:#DCEFEF;margin-top:60px;padding:46px 0;font-size:.86rem;text-align:center}
+  footer{background:linear-gradient(135deg,var(--blue-deep),var(--green-deep));color:#F4E3D5;margin-top:60px;padding:46px 0;font-size:.86rem;text-align:center}
   footer .big{font-family:"Yuji Syuku",serif;color:#fff;font-size:1.3rem;margin-bottom:12px}
   footer .disc{max-width:62ch;margin:16px auto 0;opacity:.85;line-height:1.7}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CollectionPage","name":"石垣島の鮮魚店・天ぷら 持ち帰り31軒マップ","description":"石垣島で刺身や天ぷらを持ち帰りできる地元の鮮魚店31軒を、地図と営業時間つきで紹介するローカル情報サイト。","inLanguage":"ja","url":"https://bannaohama.github.io/sasimi/","mainEntity":{"@type":"ItemList","numberOfItems":31,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":["Store","Restaurant"],"name":"いん家〜","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"宮良212","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.352563,"longitude":124.222188}}},{"@type":"ListItem","position":2,"item":{"@type":["Store","Restaurant"],"name":"天ぷら屋","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里425-3","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3419388,"longitude":124.188403}}},{"@type":"ListItem","position":3,"item":{"@type":["Store","Restaurant"],"name":"さかな家 祐梨丸","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里240-282","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.332845,"longitude":124.175239}}},{"@type":"ListItem","position":4,"item":{"@type":["Store","Restaurant"],"name":"源丸 平得店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"平得175-3","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.338328,"longitude":124.172597}}},{"@type":"ListItem","position":5,"item":{"@type":["Store","Restaurant"],"name":"よしみ鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城895","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3409458,"longitude":124.1706882}}},{"@type":"ListItem","position":6,"item":{"@type":["Store","Restaurant"],"name":"よへな鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城589","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3362352,"longitude":124.1691654}}},{"@type":"ListItem","position":7,"item":{"@type":["Store","Restaurant"],"name":"玉城和さしみ店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城628-2","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3372489,"longitude":124.1688581}}},{"@type":"ListItem","position":8,"item":{"@type":["Store","Restaurant"],"name":"石垣島水産直売所","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城590-12","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3358685,"longitude":124.1674912}}},{"@type":"ListItem","position":9,"item":{"@type":["Store","Restaurant"],"name":"八島のさかな家","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"八島町2-6-8","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3319621,"longitude":124.1669492}}},{"@type":"ListItem","position":10,"item":{"@type":["Store","Restaurant"],"name":"砂川さしみ店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城538-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.334057,"longitude":124.166009}}},{"@type":"ListItem","position":11,"item":{"@type":["Store","Restaurant"],"name":"吉本鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城523-8","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3336927,"longitude":124.165569}}},{"@type":"ListItem","position":12,"item":{"@type":["Store","Restaurant"],"name":"島さしみ店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城496-11","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3351543,"longitude":124.1627075}}},{"@type":"ListItem","position":13,"item":{"@type":["Store","Restaurant"],"name":"さかな屋ぎょぎょ","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城484-7","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.335039,"longitude":124.1617345}}},{"@type":"ListItem","position":14,"item":{"@type":["Store","Restaurant"],"name":"さしみ屋 十二銭","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"大川300-5","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.341649,"longitude":124.158483}}},{"@type":"ListItem","position":15,"item":{"@type":["Store","Restaurant"],"name":"池田鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"大川208 公設市場B1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.33968,"longitude":124.15806}}},{"@type":"ListItem","position":16,"item":{"@type":["Store","Restaurant"],"name":"まんな鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"大川209-1 公設市場B1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.339805,"longitude":124.157936}}},{"@type":"ListItem","position":17,"item":{"@type":["Store","Restaurant"],"name":"マルハ鮮魚","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"美崎町1-13","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3376087,"longitude":124.1567342}}},{"@type":"ListItem","position":18,"item":{"@type":["Store","Restaurant"],"name":"ヤエスイ直売所","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"石垣3-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.341272,"longitude":124.155844}}},{"@type":"ListItem","position":19,"item":{"@type":["Store","Restaurant"],"name":"与那嶺鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川380-4","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.345731,"longitude":124.155787}}},{"@type":"ListItem","position":20,"item":{"@type":["Store","Restaurant"],"name":"浩丸鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川13-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.344201,"longitude":124.154989}}},{"@type":"ListItem","position":21,"item":{"@type":["Store","Restaurant"],"name":"金城鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川33","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3447944,"longitude":124.1543535}}},{"@type":"ListItem","position":22,"item":{"@type":["Store","Restaurant"],"name":"まるひろ鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新栄町10-14","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3435548,"longitude":124.1530525}}},{"@type":"ListItem","position":23,"item":{"@type":["Store","Restaurant"],"name":"さしみ屋 普久原","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新栄町26-10","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.345431,"longitude":124.1517061}}},{"@type":"ListItem","position":24,"item":{"@type":["Store","Restaurant"],"name":"上原鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新栄町17-14","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.343987,"longitude":124.1516524}}},{"@type":"ListItem","position":25,"item":{"@type":["Store","Restaurant"],"name":"宮良さしみ店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新栄町23-2","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.344264,"longitude":124.151625}}},{"@type":"ListItem","position":26,"item":{"@type":["Store","Restaurant"],"name":"みちたけ丸","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新栄町25-10","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.345043,"longitude":124.1514962}}},{"@type":"ListItem","position":27,"item":{"@type":["Store","Restaurant"],"name":"えいこ鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新栄町27-5","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.345866,"longitude":124.151042}}},{"@type":"ListItem","position":28,"item":{"@type":["Store","Restaurant"],"name":"仲田鮮魚店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川2425-7","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3482033,"longitude":124.1483922}}},{"@type":"ListItem","position":29,"item":{"@type":["Store","Restaurant"],"name":"お魚市場 はるみ鮮魚","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川2424-17","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3486924,"longitude":124.147436}}},{"@type":"ListItem","position":30,"item":{"@type":["Store","Restaurant"],"name":"源丸直営店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川2373-13","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3511199,"longitude":124.1454446}}},{"@type":"ListItem","position":31,"item":{"@type":["Store","Restaurant"],"name":"崎原さしみ店","servesCuisine":"刺身・天ぷら","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川2296-4","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.352613,"longitude":124.143621}}}]}}
+{"@context":"https://schema.org","@type":"CollectionPage","name":"石垣島のラーメン屋さん23軒マップ","description":"石垣島のラーメン・麺グルメ23軒を、地図と営業時間つきで紹介するローカル情報サイト。","inLanguage":"ja","url":"https://bannaohama.github.io/ramen/","mainEntity":{"@type":"ItemList","numberOfItems":23,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Restaurant","name":"喫茶ダイヤ","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"伊原間79","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.5107098,"longitude":124.2831504}}},{"@type":"ListItem","position":2,"item":{"@type":"Restaurant","name":"八重山酒家 楽","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"大浜116-2","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3457181,"longitude":124.1967845}}},{"@type":"ListItem","position":3,"item":{"@type":"Restaurant","name":"八重山そば 八重二郎 真栄里店","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里375-5","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3368659,"longitude":124.1893673}}},{"@type":"ListItem","position":4,"item":{"@type":"Restaurant","name":"八重山そば製麺所×石垣島麺処","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里324-11","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3359547,"longitude":124.1845327}}},{"@type":"ListItem","position":5,"item":{"@type":"Restaurant","name":"札幌らーめん問屋 さんぱち","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里489-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3384671,"longitude":124.184004}}},{"@type":"ListItem","position":6,"item":{"@type":"Restaurant","name":"家系ラーメン 矢吹家","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里273-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3368734,"longitude":124.1803757}}},{"@type":"ListItem","position":7,"item":{"@type":"Restaurant","name":"花舞空","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里291","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.337167,"longitude":124.180336}}},{"@type":"ListItem","position":8,"item":{"@type":"Restaurant","name":"石垣島 麺や とり次郎","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里273-1 アルルタウンC 112","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3369263,"longitude":124.1803051}}},{"@type":"ListItem","position":9,"item":{"@type":"Restaurant","name":"麺工房","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里212-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3338207,"longitude":124.1766245}}},{"@type":"ListItem","position":10,"item":{"@type":"Restaurant","name":"らーめんパンダ食堂","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里204-337","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3320532,"longitude":124.1752052}}},{"@type":"ListItem","position":11,"item":{"@type":"Restaurant","name":"やぁさん食堂","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"真栄里185-5","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3331097,"longitude":124.1732934}}},{"@type":"ListItem","position":12,"item":{"@type":"Restaurant","name":"はなれラーメン居酒屋 鎌倉","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"平得61-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3381333,"longitude":124.1716932}}},{"@type":"ListItem","position":13,"item":{"@type":"Restaurant","name":"石垣中華麺 ushi no kadode","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城1047-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3458257,"longitude":124.1699936}}},{"@type":"ListItem","position":14,"item":{"@type":"Restaurant","name":"中国飯店 大富","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"登野城555-6","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.334595,"longitude":124.165577}}},{"@type":"ListItem","position":15,"item":{"@type":"Restaurant","name":"とっかり 石垣店","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"大川430-13","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3459941,"longitude":124.1618214}}},{"@type":"ListItem","position":16,"item":{"@type":"Restaurant","name":"石垣島麺処 美崎町店","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"美崎町8-5","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3390697,"longitude":124.1566064}}},{"@type":"ListItem","position":17,"item":{"@type":"Restaurant","name":"太門（たいもん）","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"美崎町8-6","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3391029,"longitude":124.156476}}},{"@type":"ListItem","position":18,"item":{"@type":"Restaurant","name":"麺飯食堂八重山 zeroR","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"美崎町11-1 タイラビル2F","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3400676,"longitude":124.1542396}}},{"@type":"ListItem","position":19,"item":{"@type":"Restaurant","name":"自家製麺処 らぁめん江川","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"浜崎町1-2-6","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3400862,"longitude":124.1514415}}},{"@type":"ListItem","position":20,"item":{"@type":"Restaurant","name":"大山さんちの中華そば","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新栄町22-24","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3437878,"longitude":124.1511737}}},{"@type":"ListItem","position":21,"item":{"@type":"Restaurant","name":"麺と朝食 鬼垣島","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"浜崎町2-2-31","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3409857,"longitude":124.1505218}}},{"@type":"ListItem","position":22,"item":{"@type":"Restaurant","name":"ラーメンショップ マルキ 石垣島店","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"新川418-1 ラバールカナン103","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.3525645,"longitude":124.1504188}}},{"@type":"ListItem","position":23,"item":{"@type":"Restaurant","name":"アグー豚担々麺と石垣牛焼肉","servesCuisine":"ラーメン","address":{"@type":"PostalAddress","addressLocality":"沖縄県石垣市","streetAddress":"川平921-1","addressCountry":"JP"},"geo":{"@type":"GeoCoordinates","latitude":24.4611301,"longitude":124.1409414}}}]}}
 </script>
 </head>
 <body>
@@ -152,43 +152,34 @@
        3. 前の数字＝lat、後ろの数字＝lng。その2つを下の該当店に貼り替える
        4. 保存してアップロードすれば反映されます
 
-     ※ 各行末尾のコメントが「推定」となっている店は住所からのおおよその位置です。
-       気になる店から上の手順で直してください。
+     ※ 全店 Google Places で確認済みの座標です。ズレていたら上の手順で直せます。
        ピンがズレていても、ポップアップの「Googleマップで開く」は正しい店に飛びます。
      ========================================================================== -->
 <script>
 const SHOPS = [
-  {n:1, name:"いん家〜", cat:"鮮魚・惣菜（宮良）", feat:"市街地の東・宮良", hours:"15:00–18:30（水 休）", q:"いん家 石垣市宮良212", lat:24.352563, lng:124.222188},  // Plus Code確認済み
-  {n:2, name:"天ぷら屋", cat:"天ぷら屋", feat:"7個¥350 / 13個¥550", hours:"16:00–19:00（日 休）", q:"天ぷら屋 石垣市真栄里425-3", lat:24.3419388, lng:124.188403},  // Google Places確認済み
-  {n:3, name:"さかな家 祐梨丸", cat:"鮮魚店", feat:"マグロ刺身 ¥500", hours:"営業時間は不定・現金のみ", q:"祐梨丸 石垣市真栄里", lat:24.332845, lng:124.175239},  // Google Places確認済み
-  {n:4, name:"源丸 平得店", cat:"源丸グループ・平得の店", feat:"マグロ天ぷらが評判", hours:"夕方〜夜（居酒屋として営業）", q:"源 平得店 石垣市平得175-3", lat:24.338328, lng:124.172597},  // Google Places確認済み
-  {n:5, name:"よしみ鮮魚店", cat:"鮮魚店", feat:"名物 ネギトロ・ユッケ", hours:"14:00–20:30（日 休）", q:"よしみ鮮魚店 石垣市登野城895", lat:24.3409458, lng:124.1706882},  // Google Places確認済み
-  {n:6, name:"よへな鮮魚店", cat:"鮮魚店", feat:"マグロ天ぷら10個¥200", hours:"11:00–17:00（毎日）", q:"よへな鮮魚店 石垣市登野城589", lat:24.3362352, lng:124.1691654},  // Google Places確認済み
-  {n:7, name:"玉城和さしみ店", cat:"鮮魚店", feat:"珍しい夜光貝も", hours:"11:30–19:30（水 休）", q:"玉城和さしみ店 石垣市登野城628-2", lat:24.3372489, lng:124.1688581},  // Google Places確認済み
-  {n:8, name:"石垣島水産直売所", cat:"水産直売の鮮魚店", feat:"漁協直営で安心", hours:"12:00–18:00（日 休）", q:"石垣島水産直売所 石垣市登野城590-12", lat:24.3358685, lng:124.1674912},  // Google Places確認済み
-  {n:9, name:"八島のさかな家", cat:"鮮魚店・天ぷら", feat:"名物 マグロスティック", hours:"12:00–19:00（土 休）", q:"八島のさかな家 石垣市八島町2-6-8", lat:24.3319621, lng:124.1669492},  // Google Places確認済み
-  {n:10, name:"砂川さしみ店", cat:"鮮魚店", feat:"サクふわ衣の天ぷら", hours:"営業時間は不定", q:"砂川さしみ店 石垣市登野城538-1", lat:24.334057, lng:124.166009},  // Google Places確認済み
-  {n:11, name:"吉本鮮魚店", cat:"鮮魚店", feat:"名物 味付けもずく", hours:"10:00–18:00（日 11:30–17:00）", q:"吉本鮮魚店 石垣市登野城523-8", lat:24.3336927, lng:124.165569},  // Google Places確認済み
-  {n:12, name:"島さしみ店", cat:"鮮魚店", feat:"天ぷら¥500 紙袋いっぱい", hours:"不定（天ぷらは15時頃〜）", q:"島さしみ店 石垣市登野城496-11", lat:24.3351543, lng:124.1627075},  // Google Places確認済み
-  {n:13, name:"さかな屋ぎょぎょ", cat:"鮮魚店（持ち帰り専門）", feat:"マグロ刺身¥500（2段）", hours:"13:00–18:30（水 休）", q:"さかな屋ぎょぎょ 石垣市登野城484-7", lat:24.335039, lng:124.1617345},  // Google Places確認済み
-  {n:14, name:"さしみ屋 十二銭", cat:"鮮魚店", feat:"天ぷら¥300〜", hours:"毎日 12:00–18:00", q:"さしみ屋十二銭 石垣市大川300-5", lat:24.341649, lng:124.158483},  // Google Places確認済み
-  {n:15, name:"池田鮮魚店", cat:"鮮魚店（公設市場内）", feat:"公設市場の地下1階", hours:"公設市場に準ずる（日 休）", q:"池田鮮魚店 石垣市公設市場", lat:24.33968, lng:124.15806},  // 推定（公設市場の座標）
-  {n:16, name:"まんな鮮魚店", cat:"鮮魚店（公設市場内）", feat:"市場内で一杯も", hours:"9:00–18:00（日 休）", q:"まんな鮮魚店 石垣市公設市場", lat:24.339805, lng:124.157936},  // Google Places確認済み
-  {n:17, name:"マルハ鮮魚", cat:"鮮魚店・港そば", feat:"港ビューで一杯", hours:"毎日 9:00–18:00", q:"マルハ鮮魚 石垣市美崎町1-13", lat:24.3376087, lng:124.1567342},  // Google Places確認済み
-  {n:18, name:"ヤエスイ直売所", cat:"マグロ直売所", feat:"本マグロ直送", hours:"11:00–18:30（火 休）", q:"ヤエスイ直売所 石垣市石垣3-1", lat:24.341272, lng:124.155844},  // Google Places確認済み
-  {n:19, name:"与那嶺鮮魚店", cat:"鮮魚店", feat:"新川北側の地元店", hours:"営業時間は不定", q:"与那嶺さしみ店 石垣市新川", lat:24.345731, lng:124.155787},  // Google Places確認済み（与那嶺さしみ店）
-  {n:20, name:"浩丸鮮魚店", cat:"鮮魚店", feat:"フィッシュバーガー ¥350", hours:"営業時間は不定", q:"浩丸水産 石垣市新川13-1", lat:24.344201, lng:124.154989},  // Google Places確認済み（浩丸水産）
-  {n:21, name:"金城鮮魚店", cat:"鮮魚店", feat:"地元の鮮魚店", hours:"10:00–18:00（日 11:30–17:00）", q:"金城鮮魚店 石垣市新川33", lat:24.3447944, lng:124.1543535},  // Google Places確認済み
-  {n:22, name:"まるひろ鮮魚店", cat:"鮮魚店", feat:"天ぷら¥500／袋", hours:"12:00–18:00（日 休）", q:"まるひろ鮮魚店 石垣市新栄町10-14", lat:24.3435548, lng:124.1530525},  // Google Places確認済み
-  {n:23, name:"さしみ屋 普久原", cat:"鮮魚店", feat:"盛り合わせ¥500", hours:"不定・売り切れ次第終了", q:"さしみ屋普久原 石垣市新栄町26-10", lat:24.345431, lng:124.1517061},  // Google Places確認済み
-  {n:24, name:"上原鮮魚店", cat:"鮮魚店", feat:"ふわ甘の天ぷら", hours:"9:00–18:00（日 休）", q:"上原鮮魚店 石垣市新栄町17-14", lat:24.343987, lng:124.1516524},  // Google Places確認済み
-  {n:25, name:"宮良さしみ店", cat:"鮮魚店", feat:"住宅街の小さな店", hours:"営業時間は不定", q:"宮良さしみ店 石垣市新栄町23-2", lat:24.344264, lng:124.151625},  // Google Places確認済み
-  {n:26, name:"みちたけ丸", cat:"漁船直営の鮮魚店", feat:"¥300〜 刺身たっぷり", hours:"9:00–17:00（日 休・漁次第で不定休）", q:"みちたけ丸 石垣市新栄町25-10", lat:24.345043, lng:124.1514962},  // Google Places確認済み
-  {n:27, name:"えいこ鮮魚店", cat:"鮮魚店・居酒屋", feat:"夜は島屈指の人気居酒屋", hours:"17:00–22:30（日 休）", q:"えいこ鮮魚店 石垣市新栄町27-5", lat:24.345866, lng:124.151042},  // Google Places確認済み
-  {n:28, name:"仲田鮮魚店", cat:"鮮魚店", feat:"本マグロに行列", hours:"16:00–19:00（水・土 休）", q:"仲田鮮魚店 石垣市新川2425-7", lat:24.3482033, lng:124.1483922},  // Google Places確認済み
-  {n:29, name:"お魚市場 はるみ鮮魚", cat:"鮮魚店", feat:"島魚の品揃えが豊富", hours:"16:30–19:00（木・日 休）", q:"お魚市場はるみ鮮魚 石垣市新川2424-17", lat:24.3486924, lng:124.147436},  // Google Places確認済み
-  {n:30, name:"源丸直営店", cat:"源丸 直営の惣菜・天ぷら店", feat:"天ぷら¥500（約20個）", hours:"夕方〜夜が中心・不定", q:"源丸直営店 石垣市新川2373-13", lat:24.3511199, lng:124.1454446},  // Google Places確認済み
-  {n:31, name:"崎原さしみ店", cat:"鮮魚店", feat:"マグロ赤身¥500", hours:"営業日は少なめ・不定", q:"崎原さしみ店 石垣市新川2296-4", lat:24.352613, lng:124.143621}  // Google Places確認済み
+  {n:1, name:"喫茶ダイヤ", cat:"喫茶店のラーメン（伊原間）", feat:"島北部の隠れた名店", hours:"11:30–14:00（日 休）", q:"喫茶ダイヤ 石垣市伊原間79", lat:24.5107098, lng:124.2831504},  // Google Places確認済み,
+  {n:2, name:"八重山酒家 楽", cat:"中華居酒屋（大浜）", feat:"台湾ラーメンが名物", hours:"11:30–14:30 / 18:00–21:00（月・日 休）", q:"八重山酒家 楽 石垣市大浜116-2", lat:24.3457181, lng:124.1967845},  // Google Places確認済み,
+  {n:3, name:"八重山そば 八重二郎 真栄里店", cat:"二郎系ラーメン", feat:"石垣発の二郎系", hours:"11:00–13:30（毎日・売り切れ次第終了）", q:"八重二郎 真栄里店 石垣市真栄里375-5", lat:24.3368659, lng:124.1893673},  // Google Places確認済み,
+  {n:4, name:"八重山そば製麺所×石垣島麺処", cat:"ラーメン・製麺所直営", feat:"辛さ選べる旨辛ラーメン", hours:"11:00–15:30 / 17:00–21:00", q:"八重山そば製麺所 石垣島麺処 石垣市真栄里324-11", lat:24.3359547, lng:124.1845327},  // Google Places確認済み,
+  {n:5, name:"札幌らーめん問屋 さんぱち", cat:"札幌ラーメン", feat:"島で味わう札幌味噌", hours:"11:00–17:00（火 休）", q:"札幌らーめん問屋さんぱち 石垣市真栄里489-1", lat:24.3384671, lng:124.184004},  // Google Places確認済み,
+  {n:6, name:"家系ラーメン 矢吹家", cat:"家系ラーメン", feat:"島唯一の家系", hours:"11:30–21:00（金 休）", q:"家系ラーメン 矢吹家 石垣市真栄里273-1", lat:24.3368734, lng:124.1803757},  // Google Places確認済み,
+  {n:7, name:"花舞空", cat:"老舗ラーメン店", feat:"行列のできる老舗", hours:"11:30–15:00（木・日 休）", q:"花舞空 石垣市真栄里291", lat:24.337167, lng:124.180336},  // Google Places確認済み,
+  {n:8, name:"石垣島 麺や とり次郎", cat:"煮干しラーメン", feat:"煮干し香る一杯", hours:"11:00–21:30（水 休）", q:"石垣島 麺や とり次郎 石垣市真栄里273-1", lat:24.3369263, lng:124.1803051},  // Google Places確認済み,
+  {n:9, name:"麺工房", cat:"ラーメン店（真栄里）", feat:"コスパ最強のセット", hours:"11:00–18:00（月・日 休）", q:"麺工房 石垣市真栄里212-1", lat:24.3338207, lng:124.1766245},  // Google Places確認済み,
+  {n:10, name:"らーめんパンダ食堂", cat:"家族経営のラーメン食堂", feat:"手作り餃子とシンプル塩", hours:"11:00–14:00 / 18:00–21:30（金夜 休）", q:"らーめんパンダ食堂 石垣市真栄里204-337", lat:24.3320532, lng:124.1752052},  // Google Places確認済み,
+  {n:11, name:"やぁさん食堂", cat:"ラーメン食堂（真栄里）", feat:"替え玉無料", hours:"11:00–15:00 / 17:30–22:00（毎日）", q:"やぁさん食堂 石垣市真栄里185-5", lat:24.3331097, lng:124.1732934},  // Google Places確認済み,
+  {n:12, name:"はなれラーメン居酒屋 鎌倉", cat:"ラーメン居酒屋（平得）", feat:"昼から夜通し営業", hours:"11:00–23:00（火 休）", q:"はなれラーメン居酒屋 鎌倉 石垣市平得61-1", lat:24.3381333, lng:124.1716932},  // Google Places確認済み,
+  {n:13, name:"石垣中華麺 ushi no kadode", cat:"牛骨ラーメン", feat:"石垣らしい牛骨スープ", hours:"11:00–15:00 / 18:00–20:00（月・日 休）", q:"石垣中華麺 ushi no kadode 石垣市登野城1047-1", lat:24.3458257, lng:124.1699936},  // Google Places確認済み,
+  {n:14, name:"中国飯店 大富", cat:"町中華（登野城）", feat:"ボリューム自慢の町中華", hours:"11:30–14:00 / 17:30–20:00（日 休）", q:"中国飯店 大富 石垣市登野城555-6", lat:24.334595, lng:124.165577},  // Google Places確認済み,
+  {n:15, name:"とっかり 石垣店", cat:"ラーメン店", feat:"あっさり醤油が看板", hours:"11:00–14:00 / 18:00–22:00", q:"とっかり 石垣店 石垣市大川430-13", lat:24.3459941, lng:124.1618214},  // Google Places確認済み,
+  {n:16, name:"石垣島麺処 美崎町店", cat:"夜営業のラーメン店", feat:"炙りチャーシュー塩", hours:"17:00–翌2:00（毎日）", q:"石垣島麺処 美崎町店 石垣市美崎町8-5", lat:24.3390697, lng:124.1566064},  // Google Places確認済み,
+  {n:17, name:"太門（たいもん）", cat:"町中華（美崎町）", feat:"昔ながらの塩ラーメン", hours:"12:00–14:00 / 18:00–21:00（火・水 休）※不規則", q:"太門 石垣市美崎町8-6", lat:24.3391029, lng:124.156476},  // Google Places確認済み,
+  {n:18, name:"麺飯食堂八重山 zeroR", cat:"深夜営業の麺飯食堂", feat:"朝4時までの深夜営業", hours:"19:00–翌4:00（水 休）", q:"麺飯食堂八重山 zeroR 石垣市美崎町11-1", lat:24.3400676, lng:124.1542396},  // Google Places確認済み,
+  {n:19, name:"自家製麺処 らぁめん江川", cat:"自家製麺ラーメン（昼限定）", feat:"家系から海老出汁まで", hours:"11:30–13:30（水・木 休）", q:"らぁめん江川 あっき 石垣市浜崎町1-2-6", lat:24.3400862, lng:124.1514415},  // Google Places確認済み,
+  {n:20, name:"大山さんちの中華そば", cat:"中華そば", feat:"澄み切った塩そば", hours:"11:00–15:00（水・木 休）", q:"大山さんちの中華そば 石垣市新栄町22-24", lat:24.3437878, lng:124.1511737},  // Google Places確認済み,
+  {n:21, name:"麺と朝食 鬼垣島", cat:"担々麺・朝食", feat:"辛さ選べる担々麺", hours:"7:00–14:00 / 18:00–21:00（毎日）", q:"麺と朝食 鬼垣島 石垣市浜崎町2-2-31", lat:24.3409857, lng:124.1505218},  // Google Places確認済み,
+  {n:22, name:"ラーメンショップ マルキ 石垣島店", cat:"日本最南端のラーメンショップ", feat:"朝6時から朝ラー", hours:"6:00–16:00（水 休）", q:"ラーメンショップ マルキ 石垣島店 石垣市新川418-1", lat:24.3525645, lng:124.1504188},  // Google Places確認済み,
+  {n:23, name:"アグー豚担々麺と石垣牛焼肉", cat:"川平の担々麺・居酒屋", feat:"アグー豚の担々麺", hours:"18:00–21:00（日 休）", q:"アグー豚担々麺と石垣牛焼肉 石垣市川平921-1", lat:24.4611301, lng:124.1409414}  // Google Places確認済み
 ];
 </script>
 
@@ -196,7 +187,7 @@ const SHOPS = [
   <div class="wrap">
     <a class="brand" href="/" style="text-decoration:none">← 石垣島<span>ローカル情報</span></a>
     <div class="links">
-      <a href="#intro">島の食文化</a>
+      <a href="#intro">島の麺文化</a>
       <a href="#map-section">地図</a>
       <a href="#shops">お店一覧</a>
     </div>
@@ -205,9 +196,9 @@ const SHOPS = [
 
 <header class="hero">
   <div class="wrap">
-    <h1>市街地のあちこちに、<br><em>鮮魚店</em>がある島。</h1>
-    <p class="lead">石垣島の市街地を歩くと、あちこちで見かける鮮魚店。漁師の奥さんが営むことも多く、買って帰る新鮮なお刺身と、揚げたての天ぷらが看板です。どのお店も、お刺身は驚くほど新鮮で、天ぷらはサクサク。これが本当にとびきり美味しいんです。</p>
-    <div class="handwrite">「天ぷら、500円分ください。」</div>
+    <h1>南の島にも、<br>うまい<em>ラーメン</em>がある。</h1>
+    <p class="lead">八重山そばの島・石垣島は、実はラーメンも面白い。牛骨スープや島の塩をいかした一杯、朝6時から開く最南端のラーメンショップに、朝4時までやっている深夜の〆——島サイズの個性派が揃っています。</p>
+    <div class="handwrite">「今日は、どの一杯にする？」</div>
   </div>
   <div class="wave">
     <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,31 +209,31 @@ const SHOPS = [
 
 <main class="wrap">
   <section class="intro" id="intro">
-    <p class="kicker">島の食文化</p>
-    <h2>ほんのり甘い、ふわっふわの衣。</h2>
-    <p>石垣島の天ぷらは、本土のそれとは少し違います。衣はほんのり甘く、ふわっとやわらかい。芯と呼ばれる具材には、島で揚がった魚やイカが使われます。注文を受けてから揚げてくれるお店も多く、紙袋いっぱいの揚げたては、ホテルやビーチへの持ち帰りにぴったり。漁師の奥さんが営む「○○鮮魚店」は、この島ならではの風景です。新鮮なお刺身と、揚げたての天ぷら——そのどちらも、はっとするほど美味しいのが石垣島の鮮魚店です。</p>
+    <p class="kicker">島の麺文化</p>
+    <h2>そばの島の、ラーメン事情。</h2>
+    <p>石垣島の麺といえば八重山そば。でも近年は、個性豊かなラーメン店が続々と増えています。牛骨からスープを取る店、製麺所直営のコシ麺、島の食材をいかした塩、石垣島インスパイアの二郎系まで。朝6時の「朝ラー」から深夜4時の〆まで時間帯もさまざまで、旅の胃袋の強い味方です。小規模なお店が多く、売り切れ終いや臨時休業もご愛嬌。八重山そばとの食べ比べも、この島ならではの楽しみ方です。</p>
     <div class="facts">
-      <div class="fact"><div class="n">¥500〜</div><div class="l">天ぷらは「○円分」で注文</div></div>
-      <div class="fact"><div class="n">31</div><div class="l">持ち帰りできる厳選店</div></div>
+      <div class="fact"><div class="n">朝6時〜翌4時</div><div class="l">朝ラーから深夜の〆まで</div></div>
+      <div class="fact"><div class="n">23</div><div class="l">島で味わえる麺の名店</div></div>
     </div>
   </section>
 
   <section id="map-section">
     <div class="shophead">
       <p class="kicker">地図でチェック</p>
-      <h2>31軒の鮮魚店マップ</h2>
+      <h2>23軒のラーメンマップ</h2>
     </div>
     <div class="gmap-wrap">
-      <div id="map" role="application" aria-label="石垣島 鮮魚店マップ"></div>
+      <div id="map" role="application" aria-label="石垣島 ラーメン店マップ"></div>
     </div>
-    <a class="map-allbtn" href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E5%9E%A3%E5%B3%B6%20%E3%81%95%E3%81%97%E3%81%BF%E5%B1%8B%20%E9%AE%AE%E9%AD%9A%E5%BA%97" target="_blank" rel="noopener">🗺️ Googleマップアプリで開く ↗</a>
-    <p class="maphint">📍 番号入りのピンが、紹介している31軒です。ピンをタップすると店名・特徴・営業時間と「Googleマップで開く」リンクが出ます。</p>
+    <a class="map-allbtn" href="https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">🗺️ Googleマップアプリで開く ↗</a>
+    <p class="maphint">📍 番号入りのピンが、紹介している23軒です。ピンをタップすると店名・特徴・営業時間と「Googleマップで開く」リンクが出ます。</p>
   </section>
 
   <section id="shops">
     <div class="shophead">
-      <p class="kicker">ローカルフード</p>
-      <h2>持ち帰りOK！ 鮮魚店 31軒</h2>
+      <p class="kicker">島のラーメン</p>
+      <h2>石垣島のラーメン屋さん 23軒</h2>
     </div>
 
     <p class="ordernote">💡 番号は<b>島の東側のお店から順に並べた通し番号</b>です。おすすめ順や人気順などの<b>ランキングではありません</b>。</p>
@@ -250,404 +241,300 @@ const SHOPS = [
     <div class="grid">
 
       <article class="card">
-        <div class="top"><span class="num">1</span><div class="rating"><b>—</b><small>評価なし</small></div><h3>いん家〜</h3></div>
+        <div class="top"><span class="num">1</span><div class="rating"><b>4.8</b><small>137件</small></div><h3>喫茶ダイヤ</h3></div>
         <div class="body">
-          <p class="desc">市街地から東へ、宮良集落にある持ち帰りのお店。新鮮なお刺身やお惣菜が並ぶ地元の一軒で、営業は夕方から。市街地巡りから少し足を延ばした、東エリアで立ち寄れます。</p>
-          <span class="tag">市街地の東・宮良</span>
+          <p class="desc">島北部・伊原間の青い建物が目印。小さな喫茶店ながら、濃厚な九州系スープのラーメンは「島イチ」と推す声もある実力派。名物のからあげと卵チャーハンも絶品。売り切れ早じまいが多いので早めに。現金のみ。</p>
+          <span class="tag">★4.8 北部の名店</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市宮良212</span></div>
-            <div><span class="ic">🕒</span><span>15:00–18:30（水 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%84%E3%82%93%E5%AE%B6%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%AE%AE%E8%89%AF212" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市伊原間79</span></div>
+            <div><span class="ic">🕒</span><span>11:30–14:00（日 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%96%AB%E8%8C%B6%E3%83%80%E3%82%A4%E3%83%A4%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E4%BC%8A%E5%8E%9F%E9%96%9379" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">2</span><div class="rating"><b>4.2</b><small>26件</small></div><h3>天ぷら屋</h3></div>
+        <div class="top"><span class="num">2</span><div class="rating"><b>4.4</b><small>61件</small></div><h3>八重山酒家 楽</h3></div>
         <div class="body">
-          <p class="desc">真栄里にあるコンテナの天ぷら屋。16時の開店と同時に揚げ始めるので、いつでも揚げたて。魚・イカ・野菜から選べて、7個350円・13個550円とお手頃。マグロ刺身やオリオンビールも。本土の人にも食べやすい、あっさりめの衣。</p>
-          <span class="tag">7個 ¥350 / 13個 ¥550</span>
+          <p class="desc">大浜の住宅街に隠れた本格中華のお店。ピリ辛の台湾ラーメンやトムヤムクンラーメンなど個性派の麺に、石垣島産モリンガを使ったカラフルな餃子が名物。えびチャーハンなどの一品も評判。</p>
+          <span class="tag">台湾ラーメン×モリンガ餃子</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市真栄里425-3</span></div>
-            <div><span class="ic">🕒</span><span>16:00–19:00（日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E3%81%B7%E3%82%89%E5%B1%8B%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E7%9C%9F%E6%A0%84%E9%87%8C" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市大浜116-2</span></div>
+            <div><span class="ic">🕒</span><span>11:30–14:30 / 18:00–21:00（月・日 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E9%87%8D%E5%B1%B1%E9%85%92%E5%AE%B6%20%E6%A5%BD%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%A4%A7%E6%B5%9C116-2" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">3</span><div class="rating"><b>4.0</b><small>1件</small></div><h3>さかな家 祐梨丸</h3></div>
+        <div class="top"><span class="num">3</span><div class="rating"><b>—</b><small>評価少数</small></div><h3>八重山そば 八重二郎 真栄里店</h3></div>
         <div class="body">
-          <p class="desc">「さしみ」ののぼりが目印の、地元向けの小さなお店。マグロ刺身はパックで500円、値札がないのでお店の人に聞くスタイル。夕方には品数が少なくなるので早めの時間が安心。支払いは現金のみ。</p>
-          <span class="tag">マグロ刺身 ¥500</span>
+          <p class="desc">チャーシューの代わりに軟骨ソーキがのる、石垣島インスパイアの二郎系。系列の中でも真栄里店はあっさりめの仕上がりで、二郎系デビューにもぴったり。昼だけの短い営業なので、売り切れる前に。</p>
+          <span class="tag">島の二郎系はここ</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市真栄里240-282</span></div>
-            <div><span class="ic">🕒</span><span>営業時間は不定・現金のみ</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E7%A5%90%E6%A2%A8%E4%B8%B8%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里375-5</span></div>
+            <div><span class="ic">🕒</span><span>11:00–13:30（毎日・売り切れ次第終了）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E9%87%8D%E4%BA%8C%E9%83%8E%20%E7%9C%9F%E6%A0%84%E9%87%8C%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C375-5" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">4</span><div class="rating"><b>4.2</b><small>231件</small></div><h3>源丸 平得店</h3></div>
+        <div class="top"><span class="num">4</span><div class="rating"><b>4.3</b><small>511件</small></div><h3>八重山そば製麺所×石垣島麺処</h3></div>
         <div class="body">
-          <p class="desc">マグロ漁船「源丸」グループの平得のお店。夕方からは居酒屋「源」として営業し、揚げたてのマグロ天ぷらや島の魚料理が評判。地元客でにぎわう人気店なので、席で味わうなら予約が安心。</p>
-          <span class="tag">マグロ天ぷらが評判</span>
+          <p class="desc">自家製麺所直営ならではのコシのある麺と、塩ベースの深いスープが看板。辛さをレベル1〜10で選べる旨辛ラーメンや野菜ラーメンも人気で、餃子・唐揚げも評判。カード払いOKで観光客にも使いやすい。</p>
+          <span class="tag">製麺所直営のコシ麺</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市平得175-3</span></div>
-            <div><span class="ic">🕒</span><span>夕方〜夜（居酒屋として営業）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E6%BA%90%20%E5%B9%B3%E5%BE%97%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%B9%B3%E5%BE%97175-3" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里324-11</span></div>
+            <div><span class="ic">🕒</span><span>11:00–15:30 / 17:00–21:00</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E9%87%8D%E5%B1%B1%E3%81%9D%E3%81%B0%E8%A3%BD%E9%BA%BA%E6%89%80%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E9%BA%BA%E5%87%A6%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C324-11" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">5</span><div class="rating"><b>4.3</b><small>81件</small></div><h3>よしみ鮮魚店</h3></div>
+        <div class="top"><span class="num">5</span><div class="rating"><b>3.6</b><small>205件</small></div><h3>札幌らーめん問屋 さんぱち</h3></div>
         <div class="body">
-          <p class="desc">登野城の住宅街にある人気店。マグロの赤身・中トロの質に定評があり、名物のネギトロやマグロユッケは売り切れ必至。揚げたての天ぷらも美味。常連でにぎわう、わざわざ行く価値のある一軒。</p>
-          <span class="tag">名物 ネギトロ・ユッケ</span>
+          <p class="desc">札幌発チェーンの石垣店。味噌をはじめ豚骨・醤油とメニューが豊富で、ラーメン＋ガーリック炒飯＋餃子のセットはボリューム満点。もちもちの麺に定評あり、昼から夕方までの通し営業も便利。</p>
+          <span class="tag">味噌ラーメンならここ</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城895</span></div>
-            <div><span class="ic">🕒</span><span>14:00–20:30（日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%82%88%E3%81%97%E3%81%BF%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里489-1</span></div>
+            <div><span class="ic">🕒</span><span>11:00–17:00（火 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AD%E5%B9%8C%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E5%95%8F%E5%B1%8B%E3%81%95%E3%82%93%E3%81%B1%E3%81%A1%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C489-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">6</span><div class="rating"><b>3.7</b><small>3件</small></div><h3>よへな鮮魚店</h3></div>
+        <div class="top"><span class="num">6</span><div class="rating"><b>4.0</b><small>61件</small></div><h3>家系ラーメン 矢吹家</h3></div>
         <div class="body">
-          <p class="desc">登野城のさしみ・天ぷら店。名物のマグロ天ぷらは10個200円という驚きの安さで、揚げたてはサクサクで美味。地元で長く愛され、「ここで魚の天ぷらの作り方を覚えた」という人もいるほどの一軒。</p>
-          <span class="tag">マグロ天ぷら 10個 ¥200</span>
+          <p class="desc">石垣島唯一の家系ラーメン。卓上の「無限ニンニク」と豊富な薬味で味変を楽しむスタイルで、「島で一番」と推す声も。鍋振り香る炒め飯やマグロ漬け丼とのセットが鉄板。</p>
+          <span class="tag">島唯一の家系</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城589</span></div>
-            <div><span class="ic">🕒</span><span>11:00–17:00（毎日）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%82%88%E3%81%B8%E3%81%AA%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E7%99%BB%E9%87%8E%E5%9F%8E" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里273-1</span></div>
+            <div><span class="ic">🕒</span><span>11:30–21:00（金 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%AE%B6%E7%B3%BB%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%20%E7%9F%A2%E5%90%B9%E5%AE%B6%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C273-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">7</span><div class="rating"><b>4.1</b><small>11件</small></div><h3>玉城和さしみ店</h3></div>
+        <div class="top"><span class="num">7</span><div class="rating"><b>4.2</b><small>99件</small></div><h3>花舞空</h3></div>
         <div class="body">
-          <p class="desc">カネヒデ向かいの幹線道路沿いにある鮮魚店。マグロや島魚、ネギトロのほか、ここでしか手に入りにくい夜光貝も扱う。新鮮なマグロやあぶりが好評で、ホテルでの一杯にぴったり。駐車場あり。営業日が変わるので電話確認が安心。</p>
-          <span class="tag">珍しい夜光貝も</span>
+          <p class="desc">島にラーメン店が増えた今も行列が絶えない老舗。澄んだ塩ラーメンと絶品チャーハンの組み合わせが鉄板で、黒ごま担々麺や季節限定メニューも楽しみ。昼のみ・少人数で回しているので、開店直後が狙い目。</p>
+          <span class="tag">塩ラーメン×チャーハン</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城628-2</span></div>
-            <div><span class="ic">🕒</span><span>11:30–19:30（水 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E7%8E%89%E5%9F%8E%E5%92%8C%E3%81%95%E3%81%97%E3%81%BF%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E7%99%BB%E9%87%8E%E5%9F%8E" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里291</span></div>
+            <div><span class="ic">🕒</span><span>11:30–15:00（木・日 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E8%8A%B1%E8%88%9E%E7%A9%BA%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C291" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">8</span><div class="rating"><b>4.5</b><small>639件</small></div><h3>石垣島水産直売所</h3></div>
+        <div class="top"><span class="num">8</span><div class="rating"><b>3.8</b><small>206件</small></div><h3>石垣島 麺や とり次郎</h3></div>
         <div class="body">
-          <p class="desc">地元の漁協が営む直売所だから、鮮度はお墨付き。刺身や海鮮丼が手頃に手に入り、マグロのほか白身魚やサーモンも揃う。揚げたての魚天ぷらも人気で、安心して選べる一軒。数席の飲食スペースあり。</p>
-          <span class="tag">漁協直営で安心</span>
+          <p class="desc">アルルタウン内の券売機制のお店。煮干しラーメンが看板で、自家製の餃子やチャーシューなどサイドも充実。地元客が通う気取らない雰囲気で、通し営業なので遅めランチやマリンレジャー帰りにも。現金のみ。</p>
+          <span class="tag">通し営業がうれしい</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城590-12</span></div>
-            <div><span class="ic">🕒</span><span>12:00–18:00（日 休）※15時頃〜の声も</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%B0%B4%E7%94%A3%E7%9B%B4%E5%A3%B2%E6%89%80%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E7%99%BB%E9%87%8E%E5%9F%8E" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里273-1 アルルタウンC 112</span></div>
+            <div><span class="ic">🕒</span><span>11:00–21:30（水 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E5%9E%A3%E5%B3%B6%20%E9%BA%BA%E3%82%84%20%E3%81%A8%E3%82%8A%E6%AC%A1%E9%83%8E%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C273-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">9</span><div class="rating"><b>5.0</b><small>8件</small></div><h3>八島のさかな家</h3></div>
+        <div class="top"><span class="num">9</span><div class="rating"><b>4.3</b><small>305件</small></div><h3>麺工房</h3></div>
         <div class="body">
-          <p class="desc">八島町にある家庭的なお店。マグロ刺身は500円で約20切れとたっぷり、オリジナルの味付けマグロスティック（揚げ）が名物。刺身は300円〜、天ぷらは魚・野菜のミックスを少量から選べる。魚がない日は休みなので予約が安心。</p>
-          <span class="tag">名物 マグロスティック</span>
+          <p class="desc">真栄里の地元人気店。丁寧なスープと絶品餃子が評判で、ラーメン＋炒飯＋餃子のセットは食べきれないほどのボリュームなのに良心価格。英語メニューあり、昼から夕方までの通し営業。</p>
+          <span class="tag">セットはお腹と相談</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市八島町2-6-8</span></div>
-            <div><span class="ic">🕒</span><span>12:00–19:00（土 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%B3%B6%E3%81%AE%E3%81%95%E3%81%8B%E3%81%AA%E5%AE%B6%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里212-1</span></div>
+            <div><span class="ic">🕒</span><span>11:00–18:00（月・日 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%B7%A5%E6%88%BF%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C212-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">10</span><div class="rating"><b>4.3</b><small>19件</small></div><h3>砂川さしみ店</h3></div>
+        <div class="top"><span class="num">10</span><div class="rating"><b>4.0</b><small>139件</small></div><h3>らーめんパンダ食堂</h3></div>
         <div class="body">
-          <p class="desc">看板娘の女将さんが迎えてくれる、地元で愛される島の鮮魚店。最近始めた魚天ぷらは、サクサクふわふわの衣にだしの風味が効いて評判。マグロの刺身もパックいっぱいで500円とお手頃。</p>
-          <span class="tag">サクふわ衣の天ぷら</span>
+          <p class="desc">家族経営のあたたかいラーメン食堂。もちもちの太麺とシンプルな塩が定番で、ジューシーな手作り餃子とのセット定食が人気。子ども向けの対応もしてくれる、家族連れにやさしい一軒。</p>
+          <span class="tag">家族でどうぞ</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城538-1</span></div>
-            <div><span class="ic">🕒</span><span>営業時間は不定</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E7%A0%82%E5%B7%9D%E3%81%95%E3%81%97%E3%81%BF%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里204-337</span></div>
+            <div><span class="ic">🕒</span><span>11:00–14:00 / 18:00–21:30（金夜 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E3%83%91%E3%83%B3%E3%83%80%E9%A3%9F%E5%A0%82%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C204-337" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">11</span><div class="rating"><b>4.9</b><small>11件</small></div><h3>吉本鮮魚店</h3></div>
+        <div class="top"><span class="num">11</span><div class="rating"><b>3.8</b><small>53件</small></div><h3>やぁさん食堂</h3></div>
         <div class="body">
-          <p class="desc">名物の味付けもずくが評判で、三杯酢の塩梅が絶妙。きつすぎず、もずく本来の旨みが引き立つと評判で、お土産にも人気。刺身も扱い、居酒屋にも卸す確かな品。スタッフがとても親切なのも嬉しい。</p>
-          <span class="tag">名物 味付けもずく</span>
+          <p class="desc">真栄里の家族経営ラーメン食堂。濃厚な担々麺や鶏豚骨醤油に、ジューシーな唐揚げと餃子が揃う。替え玉無料が嬉しく、座敷席ありで家族連れも安心。ドリンク3杯のせんべろセットも。現金のみ。</p>
+          <span class="tag">替え玉無料</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城523-8</span></div>
-            <div><span class="ic">🕒</span><span>10:00–18:00（日 11:30–17:00）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%90%89%E6%9C%AC%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E7%99%BB%E9%87%8E%E5%9F%8E" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市真栄里185-5</span></div>
+            <div><span class="ic">🕒</span><span>11:00–15:00 / 17:30–22:00（毎日）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%82%84%E3%81%81%E3%81%95%E3%82%93%E9%A3%9F%E5%A0%82%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%9C%9F%E6%A0%84%E9%87%8C185-5" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">12</span><div class="rating"><b>4.1</b><small>31件</small></div><h3>島さしみ店</h3></div>
+        <div class="top"><span class="num">12</span><div class="rating"><b>4.4</b><small>166件</small></div><h3>はなれラーメン居酒屋 鎌倉</h3></div>
         <div class="body">
-          <p class="desc">地元の常連でにぎわう、昔ながらの鮮魚店。15時頃から揚げ始める魚天ぷらは衣が評判で、紙袋いっぱいで500円。マグロや島魚の刺身も手頃。クルマで天ぷらを待つ人の列が目印。</p>
-          <span class="tag">天ぷら ¥500 紙袋いっぱい</span>
+          <p class="desc">平得のカラフルなラーメン居酒屋。味噌・塩・豚骨とひと通り揃い、たこ焼きなどのつまみも豊富。英語メニュー・ベジ対応あり、駐車場つきで昼から夜11時まで通しなのも心強い。</p>
+          <span class="tag">いつ行っても開いてる</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城496-11</span></div>
-            <div><span class="ic">🕒</span><span>営業時間は不定（天ぷらは15時頃〜）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%B3%B6%E3%81%95%E3%81%97%E3%81%BF%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E7%99%BB%E9%87%8E%E5%9F%8E" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市平得61-1</span></div>
+            <div><span class="ic">🕒</span><span>11:00–23:00（火 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%81%AA%E3%82%8C%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E5%B1%85%E9%85%92%E5%B1%8B%20%E9%8E%8C%E5%80%89%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%B9%B3%E5%BE%9761-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">13</span><div class="rating"><b>4.8</b><small>10件</small></div><h3>さかな屋ぎょぎょ</h3></div>
+        <div class="top"><span class="num">13</span><div class="rating"><b>4.1</b><small>204件</small></div><h3>石垣中華麺 ushi no kadode</h3></div>
         <div class="body">
-          <p class="desc">泳ぐ魚を描いたのれんが目印の、テイクアウト専門の鮮魚店。マグロ刺身は500円で2段重ねとボリューム満点。揚げ魚やもずくも揃い、鮮度と良心的な価格で地元客にも人気。会計は現金のみ。</p>
-          <span class="tag">マグロ刺身 ¥500（2段）</span>
+          <p class="desc">豚骨ではなく牛骨からスープを取る、石垣島らしい個性派。やさしく上品な味わいで、ラーメンとつけ麺の2本立て。玉ねぎのトッピングが好相性。カウンター中心の小さなお店で、大将との距離が近いのも魅力。</p>
+          <span class="tag">牛骨スープの中華麺</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市登野城484-7</span></div>
-            <div><span class="ic">🕒</span><span>13:00–18:30（水 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%95%E3%81%8B%E3%81%AA%E5%B1%8B%E3%81%8E%E3%82%87%E3%81%8E%E3%82%87%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市登野城1047-1</span></div>
+            <div><span class="ic">🕒</span><span>11:00–15:00 / 18:00–20:00（月・日 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E5%9E%A3%E4%B8%AD%E8%8F%AF%E9%BA%BA%20ushi%20no%20kadode%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%99%BB%E9%87%8E%E5%9F%8E1047-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">14</span><div class="rating"><b>4.4</b><small>161件</small></div><h3>さしみ屋 十二銭</h3></div>
+        <div class="top"><span class="num">14</span><div class="rating"><b>4.2</b><small>279件</small></div><h3>中国飯店 大富</h3></div>
         <div class="body">
-          <p class="desc">ユーグレナモールから徒歩数分。「天ぷら○円分ください」と頼むと、注文を受けてから揚げてくれる昔ながらの鮮魚店。目の前でマグロをさばくことも。刺身も天ぷらもお手頃。</p>
-          <span class="tag">天ぷら ¥300〜</span>
+          <p class="desc">家族連れでにぎわう登野城の町中華。ラーメンはもちろん、どんぶりや定食の山盛りぶりが評判で、値段も良心的。地元率高めで、いつ行っても安定の一軒。</p>
+          <span class="tag">大盛りで有名</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市大川300-5</span></div>
-            <div><span class="ic">🕒</span><span>毎日 12:00–18:00</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%95%E3%81%97%E3%81%BF%E5%B1%8B%E5%8D%81%E4%BA%8C%E9%8A%AD%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市登野城555-6</span></div>
+            <div><span class="ic">🕒</span><span>11:30–14:00 / 17:30–20:00（日 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E5%9B%BD%E9%A3%AF%E5%BA%97%20%E5%A4%A7%E5%AF%8C%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%99%BB%E9%87%8E%E5%9F%8E555-6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">15</span><div class="rating"><b>—</b><small>評価なし</small></div><h3>池田鮮魚店</h3></div>
+        <div class="top"><span class="num">15</span><div class="rating"><b>4.1</b><small>107件</small></div><h3>とっかり 石垣店</h3></div>
         <div class="body">
-          <p class="desc">ユーグレナモール内・石垣市公設市場の地下1階にある鮮魚店。新鮮なマグロの刺身を、お土産探しや街歩きのついでに買えるのが便利。まんな鮮魚店と同じフロアなので、食べ比べも楽しい。</p>
-          <span class="tag">公設市場の地下1階</span>
+          <p class="desc">大川の倉庫そばにある、店主の人柄で愛される一軒。あっさり醤油ラーメンが看板で、多言語メニューを備え海外からのリピーターも多い。駐車場ありで、夜22時まで開いているのも心強い。</p>
+          <span class="tag">人柄も味のうち</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市大川208 公設市場B1</span></div>
-            <div><span class="ic">🕒</span><span>公設市場に準ずる（日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E6%B1%A0%E7%94%B0%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%85%AC%E8%A8%AD%E5%B8%82%E5%A0%B4" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市大川430-13</span></div>
+            <div><span class="ic">🕒</span><span>11:00–14:00 / 18:00–22:00</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%81%A3%E3%81%8B%E3%82%8A%20%E7%9F%B3%E5%9E%A3%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%A4%A7%E5%B7%9D430-13" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">16</span><div class="rating"><b>5.0</b><small>2件</small></div><h3>まんな鮮魚店</h3></div>
+        <div class="top"><span class="num">16</span><div class="rating"><b>4.5</b><small>516件</small></div><h3>石垣島麺処 美崎町店</h3></div>
         <div class="body">
-          <p class="desc">公設市場の地下1階にある鮮魚店。地魚が新鮮で、観光地価格ではない良心的な値付けが嬉しい。市場の共用テーブルで、買った刺身をオリオンの生ビールと一緒に楽しめるのも市場内ならでは。</p>
-          <span class="tag">市場内で一杯も</span>
+          <p class="desc">島トップクラスの評価を誇る夜営業のラーメン店。石垣の食材をいかした塩スープに、香ばしい炙りチャーシューが絶品。QRコード注文・英語メニュー・カード払い対応で、深夜まで開いているので飲んだ後の〆にも。</p>
+          <span class="tag">島イチ評価の一杯</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市大川209-1 公設市場B1</span></div>
-            <div><span class="ic">🕒</span><span>9:00–18:00（日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%82%93%E3%81%AA%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%85%AC%E8%A8%AD%E5%B8%82%E5%A0%B4" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市美崎町8-5</span></div>
+            <div><span class="ic">🕒</span><span>17:00–翌2:00（毎日）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E5%9E%A3%E5%B3%B6%E9%BA%BA%E5%87%A6%20%E7%BE%8E%E5%B4%8E%E7%94%BA%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%BE%8E%E5%B4%8E%E7%94%BA8-5" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">17</span><div class="rating"><b>3.6</b><small>260件</small></div><h3>マルハ鮮魚</h3></div>
+        <div class="top"><span class="num">17</span><div class="rating"><b>4.2</b><small>173件</small></div><h3>太門（たいもん）</h3></div>
         <div class="body">
-          <p class="desc">フェリーターミナルのすぐ横。揚げたての魚天ぷらや刺身を買って、港を眺めながらいただける。屋外のテーブルから見える景色は格別で、生ビールも。島時間を味わいたいときに。</p>
-          <span class="tag">港ビューで一杯</span>
+          <p class="desc">美崎町の昔ながらの町中華。鍋を振る炎がのぞくカウンターで、澄んだ塩ラーメンや五目そば、「めちゃくちゃ旨い」と評判のチャーハンを。八重山そばに飽きた頃に沁みる味。営業が不規則なので開いていたらラッキー。現金のみ。</p>
+          <span class="tag">塩ラーメン×炒飯</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市美崎町1-13</span></div>
-            <div><span class="ic">🕒</span><span>毎日 9:00–18:00</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%83%9E%E3%83%AB%E3%83%8F%E9%AE%AE%E9%AD%9A%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市美崎町8-6</span></div>
+            <div><span class="ic">🕒</span><span>12:00–14:00 / 18:00–21:00（火・水 休）※不規則</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%AA%E9%96%80%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%BE%8E%E5%B4%8E%E7%94%BA8-6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">18</span><div class="rating"><b>4.5</b><small>68件</small></div><h3>ヤエスイ直売所</h3></div>
+        <div class="top"><span class="num">18</span><div class="rating"><b>3.9</b><small>32件</small></div><h3>麺飯食堂八重山 zeroR</h3></div>
         <div class="body">
-          <p class="desc">現役のマグロ漁師が営む直売所。店先の巨大マグロのオブジェが目印で、解体の様子も見られる。本マグロが驚くほどお手頃で、刺身好きにはたまらない一軒。隣のスーパーでご飯も買える。</p>
-          <span class="tag">本マグロ直送</span>
+          <p class="desc">美崎町のビル2階、ダーツも楽しめる深夜営業の麺飯食堂。あっさり塩や豚骨白湯のラーメンに、チャーハンなどの飯類も揃う。繁華街のど真ん中で朝4時まで、飲み歩きの最後に頼れる存在。</p>
+          <span class="tag">深夜の〆の駆け込み寺</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市石垣3-1</span></div>
-            <div><span class="ic">🕒</span><span>11:00–18:30（火 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%83%A4%E3%82%A8%E3%82%B9%E3%82%A4%E7%9B%B4%E5%A3%B2%E6%89%80%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市美崎町11-1 タイラビル2F</span></div>
+            <div><span class="ic">🕒</span><span>19:00–翌4:00（水 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E9%A3%AF%E9%A3%9F%E5%A0%82%E5%85%AB%E9%87%8D%E5%B1%B1%20zeroR%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E7%BE%8E%E5%B4%8E%E7%94%BA11-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">19</span><div class="rating"><b>—</b><small>評価なし</small></div><h3>与那嶺鮮魚店</h3></div>
+        <div class="top"><span class="num">19</span><div class="rating"><b>3.7</b><small>9件</small></div><h3>自家製麺処 らぁめん江川</h3></div>
         <div class="body">
-          <p class="desc">新川エリアにある地元密着の鮮魚店。新鮮なマグロの刺身を扱う、昔ながらの一軒。営業は不定なので、近くを通ったら覗いてみて、開いていたらラッキーくらいの気持ちで。</p>
-          <span class="tag">地元密着の一軒</span>
+          <p class="desc">夜は宴処「あっき」として営業するお店の、昼だけのラーメン店。家系・海老出汁・濃厚味噌など多彩なスープを自家製麺で楽しめる。魯肉飯などのミニ丼セットもお得で、地元のランチ使いに人気。</p>
+          <span class="tag">昼限定の自家製麺</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新川380-4</span></div>
-            <div><span class="ic">🕒</span><span>営業時間は不定</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8E%E9%82%A3%E5%B6%BA%E3%81%95%E3%81%97%E3%81%BF%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%96%B0%E5%B7%9D" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市浜崎町1-2-6</span></div>
+            <div><span class="ic">🕒</span><span>11:30–13:30（水・木 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%82%89%E3%81%81%E3%82%81%E3%82%93%E6%B1%9F%E5%B7%9D%20%E3%81%82%E3%81%A3%E3%81%8D%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%B5%9C%E5%B4%8E%E7%94%BA1-2-6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">20</span><div class="rating"><b>5.0</b><small>2件</small></div><h3>浩丸鮮魚店</h3></div>
+        <div class="top"><span class="num">20</span><div class="rating"><b>4.4</b><small>120件</small></div><h3>大山さんちの中華そば</h3></div>
         <div class="body">
-          <p class="desc">新川の「浩丸水産」。天ぷらも刺身も美味しいと評判で、350円のフィッシュバーガーというユニークなメニューも。鮮魚店グルメの新しい楽しみ方ができる一軒。</p>
-          <span class="tag">フィッシュバーガー ¥350</span>
+          <p class="desc">「島で一番」と推す声が多い中華そばの名店。昆布と海山の素材でとる澄んだ塩と、鶏コンソメベースの醤油の2本柱。チャーシュー丼とのセットが鉄板です。店前に駐車場あり・支払いは現金のみ。</p>
+          <span class="tag">島イチ推しの声多数</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新川13-1</span></div>
-            <div><span class="ic">🕒</span><span>営業時間は不定</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E6%B5%A9%E4%B8%B8%E6%B0%B4%E7%94%A3%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%96%B0%E5%B7%9D13-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市新栄町22-24</span></div>
+            <div><span class="ic">🕒</span><span>11:00–15:00（水・木 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%B1%B1%E3%81%95%E3%82%93%E3%81%A1%E3%81%AE%E4%B8%AD%E8%8F%AF%E3%81%9D%E3%81%B0%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%96%B0%E6%A0%84%E7%94%BA22-24" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">21</span><div class="rating"><b>3.0</b><small>5件</small></div><h3>金城鮮魚店</h3></div>
+        <div class="top"><span class="num">21</span><div class="rating"><b>4.1</b><small>141件</small></div><h3>麺と朝食 鬼垣島</h3></div>
         <div class="body">
-          <p class="desc">新川エリアの昔ながらの鮮魚店。マグロなどを扱う、地元密着の一軒。営業日が読みにくいとの声もあるので、訪れるなら開いていたらラッキーくらいの気持ちで覗いてみるのがおすすめ。</p>
-          <span class="tag">地元の鮮魚店</span>
+          <p class="desc">朝7時から開く、島では貴重な朝ごはん処でもある担々麺のお店。辛さを1〜10から選べる担々麺と黒ごま担々麺が看板で、旅行者の「旅ベスト3に入る」という声も。朝はマグロ丼などの和定食も揃う。</p>
+          <span class="tag">朝7時から営業</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新川33</span></div>
-            <div><span class="ic">🕒</span><span>10:00–18:00（日 11:30–17:00）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E9%87%91%E5%9F%8E%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%96%B0%E5%B7%9D" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市浜崎町2-2-31</span></div>
+            <div><span class="ic">🕒</span><span>7:00–14:00 / 18:00–21:00（毎日）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E3%81%A8%E6%9C%9D%E9%A3%9F%20%E9%AC%BC%E5%9E%A3%E5%B3%B6%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%B5%9C%E5%B4%8E%E7%94%BA2-2-31" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">22</span><div class="rating"><b>4.4</b><small>17件</small></div><h3>まるひろ鮮魚店</h3></div>
+        <div class="top"><span class="num">22</span><div class="rating"><b>3.9</b><small>66件</small></div><h3>ラーメンショップ マルキ 石垣島店</h3></div>
         <div class="body">
-          <p class="desc">新栄町の人気店。天ぷらは14時頃から1袋500円で、衣は厚めで一つひとつ大きめ。揚げたてを持ち帰ってビールと合わせるのが地元流。刺身の美しさにもファンが多く、「ここの刺身しか食べない」という常連も。</p>
-          <span class="tag">天ぷら ¥500／袋</span>
+          <p class="desc">静岡発マルキチェーンの、日本最南端のラーメンショップ。朝6時から開いていて「朝ラー」ができる島唯一級の存在。背脂と玉ねぎの醤油、まろやかな味噌が人気で、券売機制のカウンターは一人でも入りやすい。</p>
+          <span class="tag">日本最南端の朝ラー</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新栄町10-14</span></div>
-            <div><span class="ic">🕒</span><span>12:00–18:00（日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%BE%E3%82%8B%E3%81%B2%E3%82%8D%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%96%B0%E6%A0%84%E7%94%BA" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市新川418-1 ラバールカナン103</span></div>
+            <div><span class="ic">🕒</span><span>6:00–16:00（水 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E3%83%9E%E3%83%AB%E3%82%AD%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%96%B0%E5%B7%9D418-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <div class="top"><span class="num">23</span><div class="rating"><b>4.5</b><small>13件</small></div><h3>さしみ屋 普久原</h3></div>
+        <div class="top"><span class="num">23</span><div class="rating"><b>4.7</b><small>69件</small></div><h3>アグー豚担々麺と石垣牛焼肉</h3></div>
         <div class="body">
-          <p class="desc">住宅街にひっそりとある小さなお店。気さくな女将さんが切り盛りし、500円の盛り合わせはボリュームたっぷり。コスパの良さは島でも指折りで、ホテルでの晩酌のお供にぴったり。</p>
-          <span class="tag">盛り合わせ ¥500</span>
+          <p class="desc">夜の飲食店が少ない川平エリアの救世主。ごま香るアグー豚の担々麺とトマトラーメンが看板で、肉抜きのベジ対応も可能。石垣牛焼肉やカクテルも楽しめる居酒屋スタイル。市街地から車で30分の価値あり。</p>
+          <span class="tag">川平の夜ごはんなら</span>
           <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新栄町26-10</span></div>
-            <div><span class="ic">🕒</span><span>営業時間は不定・売り切れ次第終了</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%95%E3%81%97%E3%81%BF%E5%B1%8B%20%E6%99%AE%E4%B9%85%E5%8E%9F%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">24</span><div class="rating"><b>4.3</b><small>4件</small></div><h3>上原鮮魚店</h3></div>
-        <div class="body">
-          <p class="desc">衣がふわっと甘い、小ぶりの天ぷらが評判の鮮魚店。刺身も美味で、地元に根づいた一軒。開いていない日もあり「何度目かでやっと買えた」という声も。出会えたらラッキーくらいの気持ちで立ち寄りたい。</p>
-          <span class="tag">ふわ甘の天ぷら</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新栄町17-14</span></div>
-            <div><span class="ic">🕒</span><span>9:00–18:00（日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%8A%E5%8E%9F%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%96%B0%E6%A0%84%E7%94%BA" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">25</span><div class="rating"><b>—</b><small>評価なし</small></div><h3>宮良さしみ店</h3></div>
-        <div class="body">
-          <p class="desc">新栄町の住宅街にひっそりとある、小さなさしみ店。派手さはないものの、島の暮らしに根づいた昔ながらの一軒。営業は不定なので、開いていたら立ち寄ってみたい。</p>
-          <span class="tag">昔ながらの一軒</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新栄町23-2</span></div>
-            <div><span class="ic">🕒</span><span>営業時間は不定</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E8%89%AF%E3%81%95%E3%81%97%E3%81%BF%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%96%B0%E6%A0%84%E7%94%BA23-2" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">26</span><div class="rating"><b>3.9</b><small>14件</small></div><h3>みちたけ丸</h3></div>
-        <div class="body">
-          <p class="desc">漁船「みちたけ丸」直営の、できて数年の新しめの鮮魚店。店内がきれいで、300円でも刺身がたっぷり。気さくな女将さんが魚の入荷状況を教えてくれる。船が漁に出ているときは不定休になることも。</p>
-          <span class="tag">¥300〜 刺身たっぷり</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新栄町25-10</span></div>
-            <div><span class="ic">🕒</span><span>9:00–17:00（日 休・漁次第で不定休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%81%A1%E3%81%9F%E3%81%91%E4%B8%B8%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%96%B0%E6%A0%84%E7%94%BA" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">27</span><div class="rating"><b>4.3</b><small>748件</small></div><h3>えいこ鮮魚店</h3></div>
-        <div class="body">
-          <p class="desc">鮮魚店でありながら、夜は島でも屈指の人気居酒屋として知られる一軒。マグロをはじめ島魚の鮮度とコスパの良さは折り紙つきで、地元客と観光客でいつも満席。席で味わうなら予約が必須。</p>
-          <span class="tag">夜は予約必須の人気店</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新栄町27-5</span></div>
-            <div><span class="ic">🕒</span><span>17:00–22:30（日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%88%E3%81%84%E3%81%93%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%96%B0%E6%A0%84%E7%94%BA27-5" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">28</span><div class="rating"><b>4.4</b><small>51件</small></div><h3>仲田鮮魚店</h3></div>
-        <div class="body">
-          <p class="desc">マグロ専門の人気店。本マグロが入る日は30人を超える行列ができることも。赤身・ネギトロ・中トロにぎりが驚くほど安い。揚げたての天ぷらも美味で、カード払いにも対応。営業は不定なので開いていればラッキー。</p>
-          <span class="tag">本マグロに行列</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新川2425-7</span></div>
-            <div><span class="ic">🕒</span><span>16:00–19:00（水・土 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E4%BB%B2%E7%94%B0%E9%AE%AE%E9%AD%9A%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">29</span><div class="rating"><b>4.5</b><small>33件</small></div><h3>お魚市場 はるみ鮮魚</h3></div>
-        <div class="body">
-          <p class="desc">マックスバリュ新川店の向かいにある鮮魚店。マグロ専門の近隣店とは対照的に、ミーバイやマンビカーなど島魚の品揃えが豊富。500円で大きな白身が10個ほど入る魚天ぷらも評判。荒天の日は休み。</p>
-          <span class="tag">島魚の品揃えが豊富</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新川2424-17（マックスバリュ向かい）</span></div>
-            <div><span class="ic">🕒</span><span>16:30–19:00（木・日 休）</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%81%AF%E3%82%8B%E3%81%BF%E9%AE%AE%E9%AD%9A%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%96%B0%E5%B7%9D" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">30</span><div class="rating"><b>4.2</b><small>10件</small></div><h3>源丸直営店</h3></div>
-        <div class="body">
-          <p class="desc">漁船「源丸」の直営店。名物の揚げたて天ぷらは、500円で魚・イカが約20個とボリューム満点で、一人では食べきれないほど。刺身や寿司に加え、からあげ・煮物・もずくなどの惣菜も安く揃う、地元御用達のお店。</p>
-          <span class="tag">天ぷら ¥500（約20個）</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新川2373-13</span></div>
-            <div><span class="ic">🕒</span><span>夕方〜夜が中心・営業時間は不定</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E6%BA%90%E4%B8%B8%E7%9B%B4%E5%96%B6%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E6%96%B0%E5%B7%9D2373-13" target="_blank" rel="noopener">Googleマップで見る ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="top"><span class="num">31</span><div class="rating"><b>4.1</b><small>15件</small></div><h3>崎原さしみ店</h3></div>
-        <div class="body">
-          <p class="desc">新川エリアの住宅街にある、地元密着の鮮魚店。500円で新鮮なマグロ赤身がたっぷり、白身のフライは8個で300円と良心的。観光客にはわさびや醤油を付けてくれることも。営業日が少なめなので、開いていたら迷わず立ち寄りたい一軒。</p>
-          <span class="tag">マグロ赤身 ¥500</span>
-          <div class="meta">
-            <div><span class="ic">📍</span><span>石垣市新川2296-4</span></div>
-            <div><span class="ic">🕒</span><span>営業日は少なめ・不定</span></div>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%B4%8E%E5%8E%9F%E3%81%95%E3%81%97%E3%81%BF%E5%BA%97%20%E7%9F%B3%E5%9E%A3%E5%B3%B6%E6%96%B0%E5%B7%9D" target="_blank" rel="noopener">Googleマップで見る ↗</a>
+            <div><span class="ic">📍</span><span>石垣市川平921-1</span></div>
+            <div><span class="ic">🕒</span><span>18:00–21:00（日 休）</span></div>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%82%B0%E3%83%BC%E8%B1%9A%E6%8B%85%E3%80%85%E9%BA%BA%E3%81%A8%E7%9F%B3%E5%9E%A3%E7%89%9B%E7%84%BC%E8%82%89%20%E7%9F%B3%E5%9E%A3%E5%B8%82%E5%B7%9D%E5%B9%B3921-1" target="_blank" rel="noopener">Googleマップで見る ↗</a>
           </div>
         </div>
       </article>
@@ -655,16 +542,16 @@ const SHOPS = [
     </div>
 
     <div class="tip">
-      <b>鮮魚店 豆知識</b>
-      <p>天ぷらは「○円分ください」と金額で注文するのが島流。多くのお店は注文を受けてから揚げるので、できあがりまで10分ほど待つことも。お刺身は紙やパックに包んでくれるので、ご飯やお酒を用意してホテルで味わうのがおすすめです。漁の状況で品揃えや営業が変わるお店も多いので、開いていたらラッキーくらいの気持ちで巡るのも楽しいです。</p>
+      <b>島ラーメン 豆知識</b>
+      <p>島のラーメン店は小規模営業が多く、スープや麺がなくなり次第終了することも。昼のみ・夜のみの店も多いので、営業時間のチェックはお忘れなく。朝はマルキで朝ラー、昼は中華そば、夜は美崎町で〆——と時間帯で巡るのも楽しい。八重山そばとの食べ比べで、島の麺文化を丸ごと味わってください。</p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>石垣島ローカル情報 ｜ 鮮魚店・天ぷら案内</div>
-    <p class="disc">掲載情報は作成時点のものです。営業時間・定休日・価格は変更されることがあり、漁の状況により臨時休業となる場合もあります。お出かけ前にご確認ください。評価・件数はGoogleマップを参考にしています。地図はGoogleマップを使用しています。</p>
+    <div>石垣島ローカル情報 ｜ ラーメン店案内</div>
+    <p class="disc">掲載情報は作成時点のものです。営業時間・定休日・価格は変更されることがあり、スープ切れなどで早じまいとなる場合もあります。お出かけ前にご確認ください。評価・件数はGoogleマップを参考にしています。地図はGoogleマップを使用しています。</p>
   </div>
 </footer>
 <script>
