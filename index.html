@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>石垣島ローカル情報｜島の暮らしを、ジャンル別に。</title>
+<meta name="description" content="石垣島の地元情報をジャンル別にまとめたローカル情報サイト。鮮魚店・天ぷらやラーメンなどのグルメから、公園や絶景スポットまで、地図つきで島のとっておきを紹介します。">
+<link rel="canonical" href="https://bannaohama.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="石垣島ローカル情報">
+<meta property="og:description" content="石垣島の地元情報をジャンル別にまとめたローカル情報サイト。グルメから絶景スポットまで、島のとっておきを地図つきで紹介。">
+<meta property="og:url" content="https://bannaohama.github.io/">
+<meta property="og:image" content="https://bannaohama.github.io/ogp.png">
+<meta property="og:image:alt" content="石垣島ローカル情報">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="石垣島ローカル情報">
+<meta name="twitter:description" content="石垣島の地元情報をジャンル別にまとめたローカル情報サイト。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Yomogi&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1683C0; --blue-deep:#0C5E92; --green:#1FA980; --green-deep:#138A66;
+    --sky:#EAF4FB; --mint:#E8F6F0; --bg:#FFFFFF; --soft:#F4FAFA;
+    --ink:#16383F; --muted:#5E767B; --line:#E3EDED;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Zen Maru Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .row{display:flex;align-items:center;justify-content:space-between;height:60px}
+  nav .brand{font-weight:700;letter-spacing:.04em;font-size:1.05rem;display:flex;gap:.5rem;align-items:center;color:var(--blue-deep)}
+  nav .brand span{color:var(--green)}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,var(--sky) 0%,var(--mint) 100%);padding:64px 0 72px;text-align:center;position:relative;overflow:hidden}
+  .hero .eyebrow{font-family:"Yomogi",cursive;color:var(--green-deep);font-size:1.05rem;letter-spacing:.08em;margin-bottom:16px}
+  .hero h1{font-family:"Yuji Syuku",serif;font-weight:400;font-size:clamp(1.9rem,6.5vw,4rem);line-height:1.35;letter-spacing:.01em;color:var(--blue-deep)}
+  .hero h1 em{font-style:normal;color:var(--green)}
+  .hero .lead{margin:24px auto 0;max-width:44ch;font-size:1.05rem;color:#3A5359}
+  @media(max-width:520px){.hero h1{font-size:1.7rem}}
+
+  /* section */
+  section{padding:56px 0}
+  .kicker{font-family:"Yomogi",cursive;color:var(--green-deep);font-size:1rem;letter-spacing:.06em;margin-bottom:8px}
+  h2{font-family:"Yuji Syuku",serif;font-weight:400;font-size:clamp(1.5rem,4.6vw,2.2rem);color:var(--blue-deep);margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:30px;font-size:.98rem}
+
+  /* category grid */
+  .cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+  .cat{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--bg);transition:transform .18s,box-shadow .18s;position:relative}
+  .cat:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(12,94,146,.12)}
+  .cat .cover{height:120px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;position:relative}
+  .cat .cover .badge{position:absolute;top:12px;right:14px;background:rgba(255,255,255,.9);color:var(--blue-deep);font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:999px}
+  .cat .body{padding:18px 20px 20px}
+  .cat h3{font-size:1.2rem;color:var(--blue-deep);margin-bottom:4px}
+  .cat p{font-size:.92rem;color:var(--muted);line-height:1.7}
+  .cat .go{margin-top:12px;display:inline-flex;align-items:center;gap:6px;color:var(--green-deep);font-weight:700;font-size:.92rem}
+  /* soon */
+  .cat.soon{pointer-events:none;opacity:.62}
+  .cat.soon .cover .badge{background:#EEF2F2;color:var(--muted)}
+
+  /* about */
+  .about{background:var(--soft);border-radius:24px;padding:34px 30px;margin-top:8px}
+  .about p{color:#3C4F54;font-size:1rem}
+  .about p+p{margin-top:14px}
+
+  footer{background:var(--blue-deep);color:#DCEFEF;padding:36px 0;text-align:center;font-size:.9rem;margin-top:20px}
+  footer b{color:#fff}
+  footer .fnote{opacity:.7;font-size:.82rem;margin-top:10px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap row">
+    <div class="brand">石垣島 <span>ローカル情報</span></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">ISHIGAKI LOCAL GUIDE</p>
+    <h1>観光客にも、<br><em>島人</em>にも。</h1>
+    <p class="lead">ガイドブックやGoogleマップではヒットしづらい、石垣島のコアなローカル情報も漏れなく集めました。旅で訪れる人にも、島に暮らす人にも役立つ内容となることを目指して日々更新しています。</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">ジャンルを選ぶ</p>
+    <h2>今日は、どこへ行く？</h2>
+    <p class="sub">気になるジャンルをタップすると、その専門ページにうつります。</p>
+    <div class="cats" id="cats"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="about">
+      <p><b>このサイトについて。</b> 石垣島に暮らす目線で、地元の人が普段づかいするお店やスポットを、ジャンルごとにまとめています。掲載先はGoogleマップで確認し、地図・営業時間・特徴つきで紹介。旅行者にも、島の人にも役立つ「島の入り口」を目指しています。</p>
+      <p>ジャンルは少しずつ増やしていきます。そば処やイタリアンなどのグルメ、公園、絶景スポット、ビーチ……島の「いいところ」を、これから一つずつ足していく予定です。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>石垣島ローカル情報</b><br>
+    島の地元情報を、ジャンル別に。
+    <div class="fnote">© 石垣島ローカル情報 ｜ 掲載情報は変更となる場合があります。おでかけ前に各施設の最新情報をご確認ください。</div>
+  </div>
+</footer>
+
+<script>
+  /* =======================================================================
+     ▼▼▼ ジャンルを追加するときは、この配列に1つ足すだけ ▼▼▼
+
+     path   : そのジャンルのフォルダ名（例 "soba" → /soba/ を開く）
+     icon   : カードに出す絵文字
+     title  : ジャンル名
+     desc   : ひとことの説明
+     count  : 掲載数（数字だけ。未定なら null）
+     unit   : 数え方（"軒" "スポット" "か所" など。省略すると "軒"）
+     ready  : true=公開中（リンクが押せる） / false=準備中（Coming soon 表示）
+     tint   : カード上部の背景色（好きな色。省略可）
+
+     ★ 新ジャンルの作り方（スマホでもOK）
+       1. このサイトと同じ要領で新しい index.html を作る
+       2. GitHub でそのジャンル名のフォルダ（例 soba）を作り、中に入れる
+       3. 下の配列に1行足して ready:true にする → 完成！
+     ======================================================================= */
+  const CATEGORIES = [
+    {
+      path: "sasimi",
+      icon: "🐟",
+      title: "鮮魚店・天ぷら",
+      desc: "刺身や天ぷらを持ち帰りできる、島の鮮魚店。",
+      count: 31,
+      ready: true,
+      tint: "linear-gradient(160deg,#EAF4FB,#E8F6F0)"
+    },
+    {
+      path: "ramen",
+      icon: "🍜",
+      title: "ラーメン",
+      desc: "朝ラーから深夜の〆まで、島の個性派ラーメン。",
+      count: 23,
+      ready: true,
+      tint: "linear-gradient(160deg,#FBEFE8,#FCF4E4)"
+    },
+
+    /* --- これから追加していくジャンルの例（準備中） --- */
+    {
+      path: "soba",
+      icon: "🍲",
+      title: "八重山そば",
+      desc: "島の魂、八重山そばの名店を集めます。",
+      count: null,
+      ready: false,
+      tint: "linear-gradient(160deg,#F2F0E4,#EDE9DC)"
+    },
+    {
+      path: "italian",
+      icon: "🍝",
+      title: "イタリアン",
+      desc: "島の食材を活かしたパスタやピッツァのお店。",
+      count: null,
+      ready: false,
+      tint: "linear-gradient(160deg,#F6ECEC,#F1E3E3)"
+    },
+    {
+      path: "zekkei",
+      icon: "🌅",
+      title: "絶景スポット",
+      desc: "島じゅうの、息をのむ景色を集めます。",
+      count: null,
+      unit: "スポット",
+      ready: false,
+      tint: "linear-gradient(160deg,#E7F1FB,#E8F6F0)"
+    },
+    {
+      path: "park",
+      icon: "🌳",
+      title: "公園",
+      desc: "子ども連れにうれしい、島の公園ガイド。",
+      count: null,
+      unit: "か所",
+      ready: false,
+      tint: "linear-gradient(160deg,#EAF6EE,#E4F0E4)"
+    }
+  ];
+
+  /* ---- ここから下は編集不要。カードを自動で組み立てます ---- */
+  const el = document.getElementById("cats");
+  el.innerHTML = CATEGORIES.map(function(c){
+    const badge = c.ready
+      ? (c.count != null ? c.count + (c.unit || "軒") : "")
+      : "準備中";
+    const cover = 'style="' + (c.tint ? "background:" + c.tint + ";" : "") + '"';
+    const inner =
+      '<div class="cover" ' + cover + '>' + c.icon +
+        (badge ? '<span class="badge">' + badge + '</span>' : '') +
+      '</div>' +
+      '<div class="body">' +
+        '<h3>' + c.title + '</h3>' +
+        '<p>' + c.desc + '</p>' +
+        (c.ready ? '<span class="go">見にいく →</span>' : '<span class="go">近日公開</span>') +
+      '</div>';
+    return c.ready
+      ? '<a class="cat" href="' + c.path + '/">' + inner + '</a>'
+      : '<div class="cat soon">' + inner + '</div>';
+  }).join("");
+</script>
+
+</body>
+</html>
