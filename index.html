@@ -55,7 +55,8 @@
   .cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
   .cat{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--bg);transition:transform .18s,box-shadow .18s;position:relative}
   .cat:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(12,94,146,.12)}
-  .cat .cover{height:120px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;position:relative}
+  .cat .cover{height:120px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;position:relative;overflow:hidden}
+  .cat .cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
   .cat .cover .badge{position:absolute;top:12px;right:14px;background:rgba(255,255,255,.9);color:var(--blue-deep);font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:999px}
   .cat .body{padding:18px 20px 20px}
   .cat h3{font-size:1.2rem;color:var(--blue-deep);margin-bottom:4px}
@@ -122,13 +123,13 @@
      ▼▼▼ ジャンルを追加するときは、この配列に1つ足すだけ ▼▼▼
 
      path   : そのジャンルのフォルダ名（例 "soba" → /soba/ を開く）
-     icon   : カードに出す絵文字
+     image  : カード上部に出す画像のパス（例 "sasimi/cover.jpg"）。空 "" なら色帯のみ
      title  : ジャンル名
      desc   : ひとことの説明
      count  : 掲載数（数字だけ。未定なら null）
      unit   : 数え方（"軒" "スポット" "か所" など。省略すると "軒"）
      ready  : true=公開中（リンクが押せる） / false=準備中（Coming soon 表示）
-     tint   : カード上部の背景色（好きな色。省略可）
+     tint   : カード上部の背景色（画像が無いときに表示。好きな色。省略可）
 
      ★ 新ジャンルの作り方（スマホでもOK）
        1. このサイトと同じ要領で新しい index.html を作る
@@ -138,7 +139,7 @@
   const CATEGORIES = [
     {
       path: "sasimi",
-      icon: "🐟",
+      image: "",   // 画像を入れるときは "sasimi/cover.jpg" のようにパスを書く（空なら色帯のみ）
       title: "鮮魚店・天ぷら",
       desc: "刺身や天ぷらを持ち帰りできる、島の鮮魚店。",
       count: 31,
@@ -147,7 +148,7 @@
     },
     {
       path: "ramen",
-      icon: "🍜",
+      image: "",   // 画像を入れるときは "ramen/cover.jpg" のようにパスを書く（空なら色帯のみ）
       title: "ラーメン",
       desc: "朝ラーから深夜の〆まで、島の個性派ラーメン。",
       count: 23,
@@ -158,7 +159,7 @@
     /* --- これから追加していくジャンルの例（準備中） --- */
     {
       path: "soba",
-      icon: "🍲",
+      image: "",
       title: "八重山そば",
       desc: "島の魂、八重山そばの名店を集めます。",
       count: null,
@@ -167,7 +168,7 @@
     },
     {
       path: "italian",
-      icon: "🍝",
+      image: "",
       title: "イタリアン",
       desc: "島の食材を活かしたパスタやピッツァのお店。",
       count: null,
@@ -176,7 +177,7 @@
     },
     {
       path: "zekkei",
-      icon: "🌅",
+      image: "",
       title: "絶景スポット",
       desc: "島じゅうの、息をのむ景色を集めます。",
       count: null,
@@ -186,7 +187,7 @@
     },
     {
       path: "park",
-      icon: "🌳",
+      image: "",
       title: "公園",
       desc: "子ども連れにうれしい、島の公園ガイド。",
       count: null,
@@ -203,8 +204,11 @@
       ? (c.count != null ? c.count + (c.unit || "軒") : "")
       : "準備中";
     const cover = 'style="' + (c.tint ? "background:" + c.tint + ";" : "") + '"';
+    const coverInner = c.image
+      ? '<img class="cover-img" src="' + c.image + '" alt="' + c.title + '">'
+      : '';
     const inner =
-      '<div class="cover" ' + cover + '>' + c.icon +
+      '<div class="cover" ' + cover + '>' + coverInner +
         (badge ? '<span class="badge">' + badge + '</span>' : '') +
       '</div>' +
       '<div class="body">' +
